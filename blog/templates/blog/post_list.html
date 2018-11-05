@@ -1,6 +1,18 @@
+<!--tell html template that we've added some css files-->
+<!DOCTYPE html>
+{% load staticfiles %}   <!-- Don't forget this -->
 <html>
     <head>
         <title>Django Girls blog</title>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!--For styling header fonts. This line will import a font called Lobster from Google Fonts (https://www.google.com/fonts)-->
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+        <!-- it shd be placed here, otherwise it be overriden by the bootstrap files-->
+        <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+
     </head>
     <body>
         <div>

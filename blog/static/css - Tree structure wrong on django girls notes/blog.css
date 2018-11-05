@@ -1,0 +1,4 @@
+/* style applicabl to all links a, inside h1. know diff btn class and id---class defines grp of elements, while id deine a certain element*/
+h1 a {
+    color: #FCA205;
+}
